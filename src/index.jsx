@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 // Application entrypoint.
 
 // Load up the application styles
@@ -8,4 +9,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('react-root'));
+// const nav = document.getElementById('nav');
+
+ReactDOM.render(
+  <App />, document.getElementById('react-root')
+);
