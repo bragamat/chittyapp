@@ -8,7 +8,7 @@ class Main extends Component {
     	// console.log(this.props.messageA)
     return(
   <main className="messages">
-    <Messages messageB={this.props.messageA}/>
+    <Messages color={this.props.userColor} messageB={this.props.messageA}/>
 </main>);
   }
 }

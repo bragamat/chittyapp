@@ -7,9 +7,18 @@ class Footer extends Component{
 	if(event.key === "Enter"){
 		this.props.newMessage(event.target.value);
 		event.target.value = "";
-	}
+	} 
 
 };
+
+// _onKeyDown = (event) =>{
+//     if(event.key !== "Enter"){
+//      this.props.typingMessage(event.target.value);
+//     }
+  
+// }
+
+
   render(){
     // console.log("Rendering <Footer/>");
 	
@@ -18,8 +27,16 @@ class Footer extends Component{
 
 
   <footer className="chatbar" >
-  <Username usernameA={this.props.usernameA} onChange = {this.props.usernameA}/>
-  <input className="chatbar-message" type="text" onKeyPress={this._onSubmit} placeholder="Type a message and hit ENTER" 
+  <Username newUserF={this.props.newUser}/>
+  <input 
+  className="chatbar-message" 
+  type="text" 
+
+  // onKeyDown={this._onKeyDown}
+
+  onKeyPress={this._onSubmit} 
+
+  placeholder="Type a message and hit ENTER" 
 		
    />
   </footer>
